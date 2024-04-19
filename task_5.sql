@@ -4,4 +4,4 @@ FROM  students JOIN exams ON students.s_id=exams.s_id
 
 WHERE score IS NULL 
 GROUP BY students.s_id,name, score
-HAVING SUMM=4; 
+HAVING COUNT(exams.c_no)=4; 
