@@ -1,4 +1,5 @@
 #Команды для командной строки: установка postgres
+
 brew install postgresql
 initdb --locale=C -E UTF-8 /opt/homebrew/var/postgresql@14
 brew services start postgresql@14
