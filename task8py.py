@@ -3,15 +3,12 @@ from faker import Faker
 from random import randint, choice
 from datetime import date
 
-# Подключение к базе данных
-conn = psycopg2.connect(
-    dbname="academy",
-    user="user_name",
-    password="password",
-    host="my_host",
-    port="my_port"
-)
-
+#Подключение к базе данных
+conn = psycopg2.connect(database="Academia",
+                        host="localhost",
+                        user="Alex",
+                        password="Alex",
+                        port="5455")
 # Создание курсора для выполнения SQL-запросов
 cur = conn.cursor()
 
