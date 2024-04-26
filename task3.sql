@@ -8,8 +8,7 @@ CREATE TABLE courses(c_no SERIAL PRIMARY KEY,
                     );
 
                    
- CREATE TABLE exams(
-                   s_id INT,
+ CREATE TABLE exams(s_id INT,
                    c_no INT ,
                    score INT,
                    FOREIGN KEY (s_id)  REFERENCES students (s_id), 
